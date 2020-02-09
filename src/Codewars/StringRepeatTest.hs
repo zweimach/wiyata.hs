@@ -1,13 +1,14 @@
 module Codewars.StringRepeatTest where
 
-import           Test.Tasty
-import           Test.Tasty.HUnit
-import           Codewars.StringRepeat
+import Codewars.StringRepeat
+import Test.Tasty
+import Test.Tasty.HUnit
 
 stringRepeatTest :: TestTree
-stringRepeatTest = testGroup
+stringRepeatTest =
+  testGroup
     "stringRepeat"
-    [ testCase "hello" $ repeatStr 3 "hello" @?= "hellohellohello"
-    , testCase "my" $ repeatStr 1 "my" @?= "my"
-    , testCase "haskell" $ repeatStr 2 "haskell" @?= "haskellhaskell"
+    [ testCase "hello" $ repeatStr 3 "hello" @?= "hellohellohello",
+      testCase "my" $ repeatStr 1 "my" @?= "my",
+      testCase "haskell" $ repeatStr 2 "haskell" @?= "haskellhaskell"
     ]

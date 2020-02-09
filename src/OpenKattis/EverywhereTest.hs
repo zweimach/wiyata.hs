@@ -1,24 +1,25 @@
 module OpenKattis.EverywhereTest where
 
-import           Test.Tasty
-import           Test.Tasty.HUnit
-import           OpenKattis.Everywhere
+import OpenKattis.Everywhere
+import Test.Tasty
+import Test.Tasty.HUnit
 
 everywhereTest :: TestTree
-everywhereTest = testGroup
+everywhereTest =
+  testGroup
     "everywhere"
-    [ testCase "one place"
-    $   everywhere ["edmonton", "edmonton", "edmonton"]
-    @?= 1
-    , testCase "many places"
-    $   everywhere
-            [ "saskatoon"
-            , "toronto"
-            , "winnipeg"
-            , "toronto"
-            , "vancouver"
-            , "saskatoon"
-            , "toronto"
-            ]
-    @?= 4
+    [ testCase "one place" $
+        everywhere ["edmonton", "edmonton", "edmonton"]
+          @?= 1,
+      testCase "many places" $
+        everywhere
+          [ "saskatoon",
+            "toronto",
+            "winnipeg",
+            "toronto",
+            "vancouver",
+            "saskatoon",
+            "toronto"
+          ]
+          @?= 4
     ]
