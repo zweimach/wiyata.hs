@@ -6,6 +6,8 @@ import Codewars.StringRepeatTest
 import CodinGame.OnboardingTest
 import CodinGame.TemperaturesTest
 import CodinGame.TheDescentTest
+import HackerRank.PlusMinusTest
+import HackerRank.RepeatedStringTest
 import OpenKattis.EverywhereTest
 import Test.Tasty
 
@@ -22,5 +24,7 @@ tests =
       everywhereTest,
       oddOrEvenTest,
       reverseRecursivelyTest,
-      stringRepeatTest
+      stringRepeatTest,
+      plusMinusTest,
+      repeatedStringTest
     ]
