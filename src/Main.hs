@@ -9,6 +9,8 @@ import CodinGame.TheDescentTest
 import HackerRank.PlusMinusTest
 import HackerRank.RepeatedStringTest
 import OpenKattis.EverywhereTest
+import OpenKattis.FreeFoodTest
+import OpenKattis.ToLowerTest
 import Test.Tasty
 
 main :: IO ()
@@ -22,6 +24,8 @@ tests =
       onboardingTest,
       theDescentTest,
       everywhereTest,
+      freeFoodTest,
+      toLowerTest,
       oddOrEvenTest,
       reverseRecursivelyTest,
       stringRepeatTest,
