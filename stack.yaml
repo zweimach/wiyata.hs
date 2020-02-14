@@ -1,4 +1,4 @@
 resolver: lts-14.21
 system-ghc: true
 packages:
-    - .
+  - .
