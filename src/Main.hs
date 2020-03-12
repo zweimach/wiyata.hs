@@ -3,6 +3,8 @@ module Main where
 import Codewars.OddOrEvenTest
 import Codewars.ReverseRecursivelyTest
 import Codewars.StringRepeatTest
+import Codility.BinaryGapTest
+import Codility.OddOccurrencesInArrayTest
 import CodinGame.OnboardingTest
 import CodinGame.TemperaturesTest
 import CodinGame.TheDescentTest
@@ -30,5 +32,6 @@ tests =
       reverseRecursivelyTest,
       stringRepeatTest,
       plusMinusTest,
-      repeatedStringTest
+      binaryGapTest,
+      oddOccurrencesInArrayTest
     ]

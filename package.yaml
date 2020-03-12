@@ -11,6 +11,8 @@ extra-source-files:
 description: A collection of solutions written in Haskell
 dependencies:
   - base
+  - containers
+  - text
 tests:
   wiyata-test:
     main: Main.hs
