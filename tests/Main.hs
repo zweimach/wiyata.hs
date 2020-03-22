@@ -10,6 +10,7 @@ import CodinGame.TemperaturesTest
 import CodinGame.TheDescentTest
 import HackerRank.PlusMinusTest
 import HackerRank.RepeatedStringTest
+import KickStart.EvenDigitsTest
 import OpenKattis.EverywhereTest
 import OpenKattis.FreeFoodTest
 import OpenKattis.ToLowerTest
@@ -31,6 +32,7 @@ tests =
       oddOrEvenTest,
       reverseRecursivelyTest,
       stringRepeatTest,
+      evenDigitsTest,
       plusMinusTest,
       binaryGapTest,
       oddOccurrencesInArrayTest
