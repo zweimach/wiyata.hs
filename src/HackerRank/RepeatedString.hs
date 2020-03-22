@@ -1,6 +1,6 @@
 module HackerRank.RepeatedString where
 
-import Data.List
+import Data.List (genericLength, genericTake)
 
 repeatedString :: String -> Integer -> Integer
 repeatedString s n

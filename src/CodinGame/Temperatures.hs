@@ -1,6 +1,6 @@
 module CodinGame.Temperatures where
 
-import Data.List
+import Data.List (elemIndex)
 
 temperatures :: [Int] -> Int
 temperatures [] = 0

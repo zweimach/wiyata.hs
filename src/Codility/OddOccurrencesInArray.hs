@@ -1,7 +1,7 @@
 module Codility.OddOccurrencesInArray where
 
-import qualified Data.Map as M
 import Data.Map (Map (..))
+import qualified Data.Map as M
 
 oddOccurrencesInArray :: (Eq a, Ord a) => [a] -> a
 oddOccurrencesInArray xs = n

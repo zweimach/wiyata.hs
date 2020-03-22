@@ -1,7 +1,6 @@
 module OpenKattis.FreeFood where
 
-import Control.Monad
-import Data.List
+import Data.List (nub)
 
 freeFood :: [(Int, Int)] -> Int
 freeFood [] = 0

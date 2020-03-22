@@ -1,9 +1,7 @@
 module OpenKattis.ToLower where
 
-import Control.Monad
-import Data.Char
-import Data.Function
-import Data.List
+import Data.Char (isLower)
+import Data.Function ((&))
 
 toLower' :: [[String]] -> Int
 toLower' xs = length $ filter id lowerList

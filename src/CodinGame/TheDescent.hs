@@ -1,6 +1,6 @@
 module CodinGame.TheDescent where
 
-import Data.List
+import Data.List (elemIndex)
 
 theDescent :: [Int] -> Int
 theDescent values = maxValIndex
