@@ -13,10 +13,12 @@ dependencies:
   - base
   - containers
   - text
+library:
+  source-dirs: src
 tests:
   wiyata-test:
     main: Main.hs
-    source-dirs: src
+    source-dirs: tests
     ghc-options:
       - -threaded
       - -rtsopts
@@ -24,3 +26,4 @@ tests:
     dependencies:
       - tasty
       - tasty-hunit
+      - wiyata
