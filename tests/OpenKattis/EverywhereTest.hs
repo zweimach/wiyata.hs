@@ -1,8 +1,8 @@
 module OpenKattis.EverywhereTest where
 
-import OpenKattis.Everywhere
-import Test.Tasty
-import Test.Tasty.HUnit
+import OpenKattis.Everywhere (everywhere)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 everywhereTest :: TestTree
 everywhereTest =

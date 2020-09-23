@@ -1,8 +1,8 @@
 module Codewars.OddOrEvenTest where
 
-import Codewars.OddOrEven
-import Test.Tasty
-import Test.Tasty.HUnit
+import Codewars.OddOrEven (oddOrEven)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 oddOrEvenTest :: TestTree
 oddOrEvenTest =

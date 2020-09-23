@@ -1,8 +1,8 @@
 module Codewars.ReverseRecursivelyTest where
 
-import Codewars.ReverseRecursively
-import Test.Tasty
-import Test.Tasty.HUnit
+import Codewars.ReverseRecursively (revR)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 reverseRecursivelyTest :: TestTree
 reverseRecursivelyTest =

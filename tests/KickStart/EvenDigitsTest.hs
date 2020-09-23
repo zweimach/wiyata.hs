@@ -1,8 +1,8 @@
 module KickStart.EvenDigitsTest where
 
-import KickStart.EvenDigits
-import Test.Tasty
-import Test.Tasty.HUnit
+import KickStart.EvenDigits (evenDigits)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 evenDigitsTest :: TestTree
 evenDigitsTest =

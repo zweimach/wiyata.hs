@@ -1,8 +1,8 @@
 module OpenKattis.FreeFoodTest where
 
-import OpenKattis.FreeFood
-import Test.Tasty
-import Test.Tasty.HUnit
+import OpenKattis.FreeFood (freeFood)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 freeFoodTest :: TestTree
 freeFoodTest =

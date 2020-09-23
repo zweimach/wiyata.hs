@@ -1,8 +1,8 @@
 module CodinGame.TheDescentTest where
 
-import CodinGame.TheDescent
-import Test.Tasty
-import Test.Tasty.HUnit
+import CodinGame.TheDescent (theDescent)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 theDescentTest :: TestTree
 theDescentTest =

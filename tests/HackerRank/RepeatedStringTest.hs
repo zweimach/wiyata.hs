@@ -1,8 +1,8 @@
 module HackerRank.RepeatedStringTest where
 
-import HackerRank.RepeatedString
-import Test.Tasty
-import Test.Tasty.HUnit
+import HackerRank.RepeatedString (repeatedString)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 repeatedStringTest :: TestTree
 repeatedStringTest =

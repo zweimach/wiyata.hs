@@ -1,20 +1,22 @@
 module Main where
 
-import Codewars.OddOrEvenTest
-import Codewars.ReverseRecursivelyTest
-import Codewars.StringRepeatTest
-import Codility.BinaryGapTest
+import Codewars.OddOrEvenTest (oddOrEvenTest)
+import Codewars.ReverseRecursivelyTest (reverseRecursivelyTest)
+import Codewars.StringRepeatTest (stringRepeatTest)
+import Codility.BinaryGapTest (binaryGapTest)
 import Codility.OddOccurrencesInArrayTest
-import CodinGame.OnboardingTest
-import CodinGame.TemperaturesTest
-import CodinGame.TheDescentTest
-import HackerRank.PlusMinusTest
-import HackerRank.RepeatedStringTest
-import KickStart.EvenDigitsTest
-import OpenKattis.EverywhereTest
-import OpenKattis.FreeFoodTest
-import OpenKattis.ToLowerTest
-import Test.Tasty
+  ( oddOccurrencesInArrayTest,
+  )
+import CodinGame.OnboardingTest (onboardingTest)
+import CodinGame.TemperaturesTest (temperaturesTest)
+import CodinGame.TheDescentTest (theDescentTest)
+import HackerRank.PlusMinusTest (plusMinusTest)
+import HackerRank.RepeatedStringTest (repeatedStringTest)
+import KickStart.EvenDigitsTest (evenDigitsTest)
+import OpenKattis.EverywhereTest (everywhereTest)
+import OpenKattis.FreeFoodTest (freeFoodTest)
+import OpenKattis.ToLowerTest (toLowerTest)
+import Test.Tasty (TestTree, defaultMain, testGroup)
 
 main :: IO ()
 main = defaultMain tests
@@ -34,6 +36,7 @@ tests =
       stringRepeatTest,
       evenDigitsTest,
       plusMinusTest,
+      repeatedStringTest,
       binaryGapTest,
       oddOccurrencesInArrayTest
     ]

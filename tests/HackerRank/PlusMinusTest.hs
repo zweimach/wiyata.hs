@@ -1,8 +1,8 @@
 module HackerRank.PlusMinusTest where
 
-import HackerRank.PlusMinus
-import Test.Tasty
-import Test.Tasty.HUnit
+import HackerRank.PlusMinus (plusMinus)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 plusMinusTest :: TestTree
 plusMinusTest =

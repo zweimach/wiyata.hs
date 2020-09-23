@@ -1,8 +1,8 @@
 module Codility.OddOccurrencesInArrayTest where
 
-import Codility.OddOccurrencesInArray
-import Test.Tasty
-import Test.Tasty.HUnit
+import Codility.OddOccurrencesInArray (oddOccurrencesInArray)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 oddOccurrencesInArrayTest :: TestTree
 oddOccurrencesInArrayTest =

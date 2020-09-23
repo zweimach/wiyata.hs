@@ -1,8 +1,8 @@
 module CodinGame.OnboardingTest where
 
-import CodinGame.Onboarding
-import Test.Tasty
-import Test.Tasty.HUnit
+import CodinGame.Onboarding (onboarding)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 onboardingTest :: TestTree
 onboardingTest =

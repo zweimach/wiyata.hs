@@ -1,8 +1,8 @@
 module Codility.BinaryGapTest where
 
-import Codility.BinaryGap
-import Test.Tasty
-import Test.Tasty.HUnit
+import Codility.BinaryGap (binaryGap)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 binaryGapTest :: TestTree
 binaryGapTest =

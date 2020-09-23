@@ -1,8 +1,8 @@
 module OpenKattis.ToLowerTest where
 
-import OpenKattis.ToLower
-import Test.Tasty
-import Test.Tasty.HUnit
+import OpenKattis.ToLower (toLower')
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 toLowerTest :: TestTree
 toLowerTest =

@@ -1,8 +1,8 @@
 module CodinGame.TemperaturesTest where
 
-import CodinGame.Temperatures
-import Test.Tasty
-import Test.Tasty.HUnit
+import CodinGame.Temperatures (temperatures)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 temperaturesTest :: TestTree
 temperaturesTest =

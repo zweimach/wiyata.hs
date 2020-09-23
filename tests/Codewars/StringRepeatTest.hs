@@ -1,8 +1,8 @@
 module Codewars.StringRepeatTest where
 
-import Codewars.StringRepeat
-import Test.Tasty
-import Test.Tasty.HUnit
+import Codewars.StringRepeat (repeatStr)
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=))
 
 stringRepeatTest :: TestTree
 stringRepeatTest =
