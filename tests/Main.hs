@@ -1,5 +1,6 @@
 module Main where
 
+import Codeforces.ReorderTest (reorderTest)
 import Codewars.OddOrEvenTest (oddOrEvenTest)
 import Codewars.ReverseRecursivelyTest (reverseRecursivelyTest)
 import Codewars.StringRepeatTest (stringRepeatTest)
@@ -38,5 +39,6 @@ tests =
       plusMinusTest,
       repeatedStringTest,
       binaryGapTest,
-      oddOccurrencesInArrayTest
+      oddOccurrencesInArrayTest,
+      reorderTest
     ]
