@@ -9,6 +9,10 @@ extra-source-files:
   - README.md
   - LICENSE
 description: A collection of solutions written in Haskell
+ghc-options:
+  - -Wall
+  - -fno-warn-type-defaults
+  - -fno-warn-name-shadowing
 dependencies:
   - base
   - containers

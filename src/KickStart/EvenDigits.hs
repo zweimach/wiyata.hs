@@ -1,6 +1,5 @@
 module KickStart.EvenDigits where
 
-import Control.Monad (mapM_, replicateM)
 import Data.Char (digitToInt)
 
 evenDigits :: [Integer] -> [Integer]

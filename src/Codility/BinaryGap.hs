@@ -10,7 +10,8 @@ binaryGap n
   | isGapped = maximum $ map genericLength zeros
   | otherwise = 0
   where
-    countAdj [x] = 0
+    countAdj [] = 0
+    countAdj [_] = 0
     countAdj (x : y : xs) =
       let check = (x == '1' && y == '0') || (x == '0' && y == '1')
           rest = countAdj (y : xs)
