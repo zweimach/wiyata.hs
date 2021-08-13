@@ -11,8 +11,10 @@ extra-source-files:
 description: A collection of solutions written in Haskell
 ghc-options:
   - -Wall
-  - -fno-warn-type-defaults
-  - -fno-warn-name-shadowing
+  - -Wcompat
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
 dependencies:
   - base
   - containers

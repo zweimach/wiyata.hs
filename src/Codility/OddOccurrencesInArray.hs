@@ -7,5 +7,5 @@ oddOccurrencesInArray xs = n
   where
     (=+) m x = M.insertWith (+) x 1 m
     count [] = M.empty
-    count (x : xs) = count xs =+ x
+    count (y : ys) = count ys =+ y
     [(n, _)] = filter ((== 1) . snd) $ M.toList $ count xs

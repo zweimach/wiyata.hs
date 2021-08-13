@@ -5,15 +5,17 @@ import Codewars.OddOrEvenTest (oddOrEvenTest)
 import Codewars.ReverseRecursivelyTest (reverseRecursivelyTest)
 import Codewars.StringRepeatTest (stringRepeatTest)
 import Codility.BinaryGapTest (binaryGapTest)
-import Codility.OddOccurrencesInArrayTest
-  ( oddOccurrencesInArrayTest,
-  )
+import Codility.OddOccurrencesInArrayTest (oddOccurrencesInArrayTest)
+import CodinGame.HorseRacingDualsTest (horseRacingDualsTest)
 import CodinGame.OnboardingTest (onboardingTest)
 import CodinGame.TemperaturesTest (temperaturesTest)
 import CodinGame.TheDescentTest (theDescentTest)
+import DMOJ.NextInLineTest (nextInLineTest)
 import HackerRank.PlusMinusTest (plusMinusTest)
 import HackerRank.RepeatedStringTest (repeatedStringTest)
 import KickStart.EvenDigitsTest (evenDigitsTest)
+import LeetCode.RichestCustomerWealthTest (maximumWealthTest)
+import LeetCode.ValidParenthesesTest (validParenthesesTest)
 import OpenKattis.EverywhereTest (everywhereTest)
 import OpenKattis.FreeFoodTest (freeFoodTest)
 import OpenKattis.ToLowerTest (toLowerTest)
@@ -40,5 +42,9 @@ tests =
       repeatedStringTest,
       binaryGapTest,
       oddOccurrencesInArrayTest,
-      reorderTest
+      reorderTest,
+      nextInLineTest,
+      maximumWealthTest,
+      horseRacingDualsTest,
+      validParenthesesTest
     ]
