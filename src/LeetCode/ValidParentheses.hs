@@ -9,5 +9,5 @@ validParentheses str = null $ go [] str
     go acc [] = acc
     go [] (y : ys) = go [y] ys
     go acc@(x : xs) (y : ys)
-      | Map.lookup x pairs == Just y = go xs ys
-      | otherwise = go (y : acc) ys
+        | Map.lookup x pairs == Just y = go xs ys
+        | otherwise = go (y : acc) ys

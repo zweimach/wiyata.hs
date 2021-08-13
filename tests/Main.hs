@@ -26,25 +26,25 @@ main = defaultMain tests
 
 tests :: TestTree
 tests =
-  testGroup
-    "wiyata-test"
-    [ temperaturesTest,
-      onboardingTest,
-      theDescentTest,
-      everywhereTest,
-      freeFoodTest,
-      toLowerTest,
-      oddOrEvenTest,
-      reverseRecursivelyTest,
-      stringRepeatTest,
-      evenDigitsTest,
-      plusMinusTest,
-      repeatedStringTest,
-      binaryGapTest,
-      oddOccurrencesInArrayTest,
-      reorderTest,
-      nextInLineTest,
-      maximumWealthTest,
-      horseRacingDualsTest,
-      validParenthesesTest
-    ]
+    testGroup
+        "wiyata-test"
+        [ temperaturesTest
+        , onboardingTest
+        , theDescentTest
+        , everywhereTest
+        , freeFoodTest
+        , toLowerTest
+        , oddOrEvenTest
+        , reverseRecursivelyTest
+        , stringRepeatTest
+        , evenDigitsTest
+        , plusMinusTest
+        , repeatedStringTest
+        , binaryGapTest
+        , oddOccurrencesInArrayTest
+        , reorderTest
+        , nextInLineTest
+        , maximumWealthTest
+        , horseRacingDualsTest
+        , validParenthesesTest
+        ]

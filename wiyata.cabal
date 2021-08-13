@@ -1,0 +1,95 @@
+cabal-version:      2.4
+name:               wiyata
+version:            0.0.0
+description:        A collection of solutions written in Haskell
+homepage:           https://github.com/zweimach/wiyata.hs#readme
+bug-reports:        https://github.com/zweimach/wiyata.hs/issues
+author:             Ananda Umamil
+maintainer:         zweimach@zweimach.org
+copyright:          2018 Ananda Umamil
+license:            MIT
+license-file:       LICENSE
+build-type:         Simple
+extra-source-files:
+    LICENSE
+    README.md
+
+source-repository head
+    type:     git
+    location: https://github.com/zweimach/wiyata.hs
+
+library
+    exposed-modules:
+        Codeforces.Reorder
+        Codewars.OddOrEven
+        Codewars.ReverseRecursively
+        Codewars.StringRepeat
+        Codility.BinaryGap
+        Codility.OddOccurrencesInArray
+        CodinGame.HorseRacingDuals
+        CodinGame.Onboarding
+        CodinGame.Temperatures
+        CodinGame.TheDescent
+        DMOJ.NextInLine
+        HackerRank.PlusMinus
+        HackerRank.RepeatedString
+        KickStart.EvenDigits
+        LeetCode.RichestCustomerWealth
+        LeetCode.ValidParentheses
+        OpenKattis.Everywhere
+        OpenKattis.FreeFood
+        OpenKattis.ToLower
+
+    other-modules:    Paths_wiyata
+    hs-source-dirs:   src
+    ghc-options:
+        -Wall -Wcompat -Wincomplete-record-updates
+        -Wincomplete-uni-patterns -Wredundant-constraints
+
+    build-depends:
+        , base        >=4.13 && <5
+        , containers
+        , text
+
+    default-language: Haskell2010
+
+test-suite wiyata-test
+    type:             exitcode-stdio-1.0
+    main-is:          Main.hs
+    other-modules:
+        Codeforces.ReorderTest
+        Codewars.OddOrEvenTest
+        Codewars.ReverseRecursivelyTest
+        Codewars.StringRepeatTest
+        Codility.BinaryGapTest
+        Codility.OddOccurrencesInArrayTest
+        CodinGame.HorseRacingDualsTest
+        CodinGame.OnboardingTest
+        CodinGame.TemperaturesTest
+        CodinGame.TheDescentTest
+        DMOJ.NextInLineTest
+        HackerRank.PlusMinusTest
+        HackerRank.RepeatedStringTest
+        KickStart.EvenDigitsTest
+        LeetCode.RichestCustomerWealthTest
+        LeetCode.ValidParenthesesTest
+        OpenKattis.EverywhereTest
+        OpenKattis.FreeFoodTest
+        OpenKattis.ToLowerTest
+        Paths_wiyata
+
+    hs-source-dirs:   tests
+    ghc-options:
+        -Wall -Wcompat -Wincomplete-record-updates
+        -Wincomplete-uni-patterns -Wredundant-constraints -threaded
+        -rtsopts -with-rtsopts=-N
+
+    build-depends:
+        , base         >=4.13 && <5
+        , containers
+        , tasty
+        , tasty-hunit
+        , text
+        , wiyata
+
+    default-language: Haskell2010

@@ -5,8 +5,8 @@ import Data.List (elemIndex)
 temperatures :: [Int] -> Int
 temperatures [] = 0
 temperatures temps
-  | existBoth = absMinTemp
-  | otherwise = minTemp
+    | existBoth = absMinTemp
+    | otherwise = minTemp
   where
     diffTemps = map (abs . (0 -)) temps
     minDiffTemp = minimum diffTemps

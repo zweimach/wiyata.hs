@@ -6,12 +6,12 @@ import Test.Tasty.HUnit (testCase, (@?=))
 
 validParenthesesTest :: TestTree
 validParenthesesTest =
-  testGroup
-    "validParentheses"
-    [ testCase "(){}[]" $ validParentheses "(){}[]" @?= True,
-      testCase "[({(()()())})]" $ validParentheses "[({(()()())})]" @?= True,
-      testCase "{([({[]}[])()])}" $ validParentheses "{([({[]}[])()])}" @?= True,
-      testCase "([{({[]})}]))" $ validParentheses "([{({[]})}]))" @?= False,
-      testCase "[](){}(){}[]]]]" $ validParentheses "[](){}(){}[]]]]" @?= False,
-      testCase "{{[[(((" $ validParentheses "{{[[(((" @?= False
-    ]
+    testGroup
+        "validParentheses"
+        [ testCase "(){}[]" $ validParentheses "(){}[]" @?= True
+        , testCase "[({(()()())})]" $ validParentheses "[({(()()())})]" @?= True
+        , testCase "{([({[]}[])()])}" $ validParentheses "{([({[]}[])()])}" @?= True
+        , testCase "([{({[]})}]))" $ validParentheses "([{({[]})}]))" @?= False
+        , testCase "[](){}(){}[]]]]" $ validParentheses "[](){}(){}[]]]]" @?= False
+        , testCase "{{[[(((" $ validParentheses "{{[[(((" @?= False
+        ]

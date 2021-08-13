@@ -10,6 +10,9 @@ jobs:
   unit:
     name: unit test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ghc-version: ["8.8", "8.10", "9.0"]
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
@@ -17,17 +20,16 @@ jobs:
       - name: Setup GHC
         uses: haskell/actions/setup@v1
         with:
-          ghc-version: "8.6.5"
-          enable-stack: true
-          stack-version: "latest"
+          ghc-version: ${{ matrix.ghc-version }}
+
+      - name: Build and run tests
+        run: cabal test
 
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.stack
-          key: ${{ runner.os }}-${{ hashFiles('stack.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-
-
-      - name: Build and run tests
-        run: stack test --fast --no-terminal --system-ghc
+          path: |
+            ~/.cabal/packages
+            ~/.cabal/store
+            dist-newstyle
+          key: ${{ runner.os }}-${{ matrix.ghc-version }}
