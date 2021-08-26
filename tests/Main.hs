@@ -11,8 +11,11 @@ import CodinGame.OnboardingTest (onboardingTest)
 import CodinGame.TemperaturesTest (temperaturesTest)
 import CodinGame.TheDescentTest (theDescentTest)
 import DMOJ.NextInLineTest (nextInLineTest)
+import HackerRank.CountingValleysTest (countingValleysTest)
+import HackerRank.FibonacciTest (fibonacciTest)
 import HackerRank.PlusMinusTest (plusMinusTest)
 import HackerRank.RepeatedStringTest (repeatedStringTest)
+import HackerRank.SalesByMatchTest (salesByMatchTest)
 import KickStart.EvenDigitsTest (evenDigitsTest)
 import LeetCode.RichestCustomerWealthTest (maximumWealthTest)
 import LeetCode.ValidParenthesesTest (validParenthesesTest)
@@ -47,4 +50,7 @@ tests =
         , maximumWealthTest
         , horseRacingDualsTest
         , validParenthesesTest
+        , fibonacciTest
+        , salesByMatchTest
+        , countingValleysTest
         ]

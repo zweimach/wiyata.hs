@@ -31,8 +31,11 @@ library
         CodinGame.Temperatures
         CodinGame.TheDescent
         DMOJ.NextInLine
+        HackerRank.CountingValleys
+        HackerRank.Fibonacci
         HackerRank.PlusMinus
         HackerRank.RepeatedString
+        HackerRank.SalesByMatch
         KickStart.EvenDigits
         LeetCode.RichestCustomerWealth
         LeetCode.ValidParentheses
@@ -68,8 +71,11 @@ test-suite wiyata-test
         CodinGame.TemperaturesTest
         CodinGame.TheDescentTest
         DMOJ.NextInLineTest
+        HackerRank.CountingValleysTest
+        HackerRank.FibonacciTest
         HackerRank.PlusMinusTest
         HackerRank.RepeatedStringTest
+        HackerRank.SalesByMatchTest
         KickStart.EvenDigitsTest
         LeetCode.RichestCustomerWealthTest
         LeetCode.ValidParenthesesTest
