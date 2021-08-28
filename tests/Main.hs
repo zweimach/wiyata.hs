@@ -11,8 +11,11 @@ import CodinGame.OnboardingTest (onboardingTest)
 import CodinGame.TemperaturesTest (temperaturesTest)
 import CodinGame.TheDescentTest (theDescentTest)
 import DMOJ.NextInLineTest (nextInLineTest)
+import HackerRank.AlphabeticallySmallestTest (smallestStringTest)
+import HackerRank.BalancedBracketsTest (balancedBracketsTest)
 import HackerRank.CountingValleysTest (countingValleysTest)
 import HackerRank.FibonacciTest (fibonacciTest)
+import HackerRank.FirstRepeatedWordTest (firstRepeatedWordTest)
 import HackerRank.PlusMinusTest (plusMinusTest)
 import HackerRank.RepeatedStringTest (repeatedStringTest)
 import HackerRank.SalesByMatchTest (salesByMatchTest)
@@ -50,7 +53,10 @@ tests =
         , maximumWealthTest
         , horseRacingDualsTest
         , validParenthesesTest
+        , firstRepeatedWordTest
+        , smallestStringTest
         , fibonacciTest
         , salesByMatchTest
+        , balancedBracketsTest
         , countingValleysTest
         ]

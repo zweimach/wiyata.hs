@@ -31,8 +31,11 @@ library
         CodinGame.Temperatures
         CodinGame.TheDescent
         DMOJ.NextInLine
+        HackerRank.AlphabeticallySmallest
+        HackerRank.BalancedBrackets
         HackerRank.CountingValleys
         HackerRank.Fibonacci
+        HackerRank.FirstRepeatedWord
         HackerRank.PlusMinus
         HackerRank.RepeatedString
         HackerRank.SalesByMatch
@@ -71,8 +74,11 @@ test-suite wiyata-test
         CodinGame.TemperaturesTest
         CodinGame.TheDescentTest
         DMOJ.NextInLineTest
+        HackerRank.AlphabeticallySmallestTest
+        HackerRank.BalancedBracketsTest
         HackerRank.CountingValleysTest
         HackerRank.FibonacciTest
+        HackerRank.FirstRepeatedWordTest
         HackerRank.PlusMinusTest
         HackerRank.RepeatedStringTest
         HackerRank.SalesByMatchTest
