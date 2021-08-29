@@ -1,6 +1,7 @@
 module Main where
 
 import Codeforces.ReorderTest (reorderTest)
+import Codewars.ConsecutiveStringsTest (consecutiveStringsTest)
 import Codewars.OddOrEvenTest (oddOrEvenTest)
 import Codewars.ReverseRecursivelyTest (reverseRecursivelyTest)
 import Codewars.StringRepeatTest (stringRepeatTest)
@@ -19,7 +20,9 @@ import HackerRank.FirstRepeatedWordTest (firstRepeatedWordTest)
 import HackerRank.PlusMinusTest (plusMinusTest)
 import HackerRank.RepeatedStringTest (repeatedStringTest)
 import HackerRank.SalesByMatchTest (salesByMatchTest)
+import HackerRank.SlowestKeyPressTest (slowestKeyPressTest)
 import KickStart.EvenDigitsTest (evenDigitsTest)
+import LeetCode.LongestSubstringTest (longestSubstringTest)
 import LeetCode.RichestCustomerWealthTest (maximumWealthTest)
 import LeetCode.ValidParenthesesTest (validParenthesesTest)
 import OpenKattis.EverywhereTest (everywhereTest)
@@ -54,9 +57,12 @@ tests =
         , horseRacingDualsTest
         , validParenthesesTest
         , firstRepeatedWordTest
+        , slowestKeyPressTest
         , smallestStringTest
         , fibonacciTest
         , salesByMatchTest
         , balancedBracketsTest
         , countingValleysTest
+        , longestSubstringTest
+        , consecutiveStringsTest
         ]

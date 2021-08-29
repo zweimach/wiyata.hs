@@ -21,6 +21,7 @@ source-repository head
 library
     exposed-modules:
         Codeforces.Reorder
+        Codewars.ConsecutiveStrings
         Codewars.OddOrEven
         Codewars.ReverseRecursively
         Codewars.StringRepeat
@@ -39,7 +40,9 @@ library
         HackerRank.PlusMinus
         HackerRank.RepeatedString
         HackerRank.SalesByMatch
+        HackerRank.SlowestKeyPress
         KickStart.EvenDigits
+        LeetCode.LongestSubstring
         LeetCode.RichestCustomerWealth
         LeetCode.ValidParentheses
         OpenKattis.Everywhere
@@ -64,6 +67,7 @@ test-suite wiyata-test
     main-is:          Main.hs
     other-modules:
         Codeforces.ReorderTest
+        Codewars.ConsecutiveStringsTest
         Codewars.OddOrEvenTest
         Codewars.ReverseRecursivelyTest
         Codewars.StringRepeatTest
@@ -82,7 +86,9 @@ test-suite wiyata-test
         HackerRank.PlusMinusTest
         HackerRank.RepeatedStringTest
         HackerRank.SalesByMatchTest
+        HackerRank.SlowestKeyPressTest
         KickStart.EvenDigitsTest
+        LeetCode.LongestSubstringTest
         LeetCode.RichestCustomerWealthTest
         LeetCode.ValidParenthesesTest
         OpenKattis.EverywhereTest
