@@ -7,6 +7,6 @@ import Test.Tasty.HUnit (testCase, (@?=))
 fibonacciTest :: TestTree
 fibonacciTest =
     testGroup
-        "fibonacciTest"
+        "fibonacci"
         [ testCase "15" $ fibonacci 15 @?= 610
         ]

@@ -1,11 +1,9 @@
 module Codility.OddOccurrencesInArray where
 
-import qualified Data.Map as M
+import qualified Data.Map as Map
 
 oddOccurrencesInArray :: Ord a => [a] -> a
-oddOccurrencesInArray xs = n
+oddOccurrencesInArray = fst . head . filter ((== 1) . snd) . go Map.empty
   where
-    (=+) m x = M.insertWith (+) x 1 m
-    count [] = M.empty
-    count (y : ys) = count ys =+ y
-    [(n, _)] = filter ((== 1) . snd) $ M.toList $ count xs
+    go acc [] = Map.toList acc
+    go acc (y : ys) = go (Map.insertWith (+) y 1 acc) ys

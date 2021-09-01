@@ -1,9 +1,7 @@
 module CodinGame.TheDescent where
 
 import Data.List (elemIndex)
+import Data.Maybe (fromJust)
 
 theDescent :: [Int] -> Int
-theDescent values = maxValIndex
-  where
-    maxValue = maximum values
-    (Just maxValIndex) = elemIndex maxValue values
+theDescent values = fromJust $ elemIndex (maximum values) values

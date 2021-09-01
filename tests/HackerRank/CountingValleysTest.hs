@@ -7,7 +7,7 @@ import Test.Tasty.HUnit (testCase, (@?=))
 countingValleysTest :: TestTree
 countingValleysTest =
     testGroup
-        "countingValleysTest"
+        "countingValleys"
         [ testCase "UDDDUDUU" $ countingValleys 8 "UDDDUDUU" @?= 1
         , testCase "DDUUDDUDUUUD" $ countingValleys 12 "DDUUDDUDUUUD" @?= 2
         ]

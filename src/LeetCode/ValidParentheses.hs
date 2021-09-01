@@ -3,7 +3,7 @@ module LeetCode.ValidParentheses where
 import qualified Data.Map as Map
 
 validParentheses :: String -> Bool
-validParentheses str = null $ go [] str
+validParentheses = null . go []
   where
     pairs = Map.fromList [('(', ')'), ('[', ']'), ('{', '}')]
     go acc [] = acc
