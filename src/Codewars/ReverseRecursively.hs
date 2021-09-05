@@ -1,5 +1,7 @@
 module Codewars.ReverseRecursively where
 
 revR :: [Int] -> [Int]
-revR [] = []
-revR (x : xs) = revR xs ++ [x]
+revR = go []
+  where
+    go acc [] = acc
+    go acc (x : xs) = go (x : acc) xs

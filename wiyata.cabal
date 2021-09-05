@@ -32,6 +32,8 @@ library
         CodinGame.Temperatures
         CodinGame.TheDescent
         DMOJ.NextInLine
+        Exercism.CollatzConjecture
+        Exercism.Pangram
         HackerRank.AlphabeticallySmallest
         HackerRank.BalancedBrackets
         HackerRank.CountingValleys
@@ -41,6 +43,7 @@ library
         HackerRank.RepeatedString
         HackerRank.SalesByMatch
         HackerRank.SlowestKeyPress
+        HackerRank.TheJungleBook
         KickStart.EvenDigits
         LeetCode.LongestSubstring
         LeetCode.RichestCustomerWealth
@@ -79,6 +82,8 @@ test-suite wiyata-test
         CodinGame.TemperaturesTest
         CodinGame.TheDescentTest
         DMOJ.NextInLineTest
+        Exercism.CollatzConjectureTest
+        Exercism.PangramTest
         HackerRank.AlphabeticallySmallestTest
         HackerRank.BalancedBracketsTest
         HackerRank.CountingValleysTest
@@ -88,6 +93,7 @@ test-suite wiyata-test
         HackerRank.RepeatedStringTest
         HackerRank.SalesByMatchTest
         HackerRank.SlowestKeyPressTest
+        HackerRank.TheJungleBookTest
         KickStart.EvenDigitsTest
         LeetCode.LongestSubstringTest
         LeetCode.RichestCustomerWealthTest
@@ -95,7 +101,6 @@ test-suite wiyata-test
         OpenKattis.EverywhereTest
         OpenKattis.FreeFoodTest
         OpenKattis.ToLowerTest
-        Paths_wiyata
 
     hs-source-dirs:   tests
     ghc-options:

@@ -12,6 +12,8 @@ import CodinGame.OnboardingTest (onboardingTest)
 import CodinGame.TemperaturesTest (temperaturesTest)
 import CodinGame.TheDescentTest (theDescentTest)
 import DMOJ.NextInLineTest (nextInLineTest)
+import Exercism.CollatzConjectureTest (collatzConjectureTest)
+import Exercism.PangramTest (pangramTest)
 import HackerRank.AlphabeticallySmallestTest (smallestStringTest)
 import HackerRank.BalancedBracketsTest (balancedBracketsTest)
 import HackerRank.CountingValleysTest (countingValleysTest)
@@ -21,6 +23,7 @@ import HackerRank.PlusMinusTest (plusMinusTest)
 import HackerRank.RepeatedStringTest (repeatedStringTest)
 import HackerRank.SalesByMatchTest (salesByMatchTest)
 import HackerRank.SlowestKeyPressTest (slowestKeyPressTest)
+import HackerRank.TheJungleBookTest (theJungleBookTest)
 import KickStart.EvenDigitsTest (evenDigitsTest)
 import LeetCode.LongestSubstringTest (longestSubstringTest)
 import LeetCode.RichestCustomerWealthTest (maximumWealthTest)
@@ -65,4 +68,7 @@ tests =
         , countingValleysTest
         , longestSubstringTest
         , consecutiveStringsTest
+        , pangramTest
+        , collatzConjectureTest
+        , theJungleBookTest
         ]
