@@ -45,8 +45,10 @@ library
         HackerRank.SlowestKeyPress
         HackerRank.TheJungleBook
         KickStart.EvenDigits
+        LeetCode.EvaluateReversePolishNotation
         LeetCode.LongestSubstring
         LeetCode.RichestCustomerWealth
+        LeetCode.StringToInteger
         LeetCode.ValidParentheses
         OpenKattis.Everywhere
         OpenKattis.FreeFood
@@ -95,8 +97,10 @@ test-suite wiyata-test
         HackerRank.SlowestKeyPressTest
         HackerRank.TheJungleBookTest
         KickStart.EvenDigitsTest
+        LeetCode.EvaluateReversePolishNotationTest
         LeetCode.LongestSubstringTest
         LeetCode.RichestCustomerWealthTest
+        LeetCode.StringToIntegerTest
         LeetCode.ValidParenthesesTest
         OpenKattis.EverywhereTest
         OpenKattis.FreeFoodTest

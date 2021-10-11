@@ -1,4 +1,5 @@
 .stack-work/
 .liquid/
 dist-newstyle/
+cabal.project.local
 *~

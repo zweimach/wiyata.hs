@@ -25,8 +25,10 @@ import HackerRank.SalesByMatchTest (salesByMatchTest)
 import HackerRank.SlowestKeyPressTest (slowestKeyPressTest)
 import HackerRank.TheJungleBookTest (theJungleBookTest)
 import KickStart.EvenDigitsTest (evenDigitsTest)
+import LeetCode.EvaluateReversePolishNotationTest (evaluateReversePolishNotationTest)
 import LeetCode.LongestSubstringTest (longestSubstringTest)
 import LeetCode.RichestCustomerWealthTest (maximumWealthTest)
+import LeetCode.StringToIntegerTest (stringToIntegerTest)
 import LeetCode.ValidParenthesesTest (validParenthesesTest)
 import OpenKattis.EverywhereTest (everywhereTest)
 import OpenKattis.FreeFoodTest (freeFoodTest)
@@ -71,4 +73,6 @@ tests =
         , pangramTest
         , collatzConjectureTest
         , theJungleBookTest
+        , evaluateReversePolishNotationTest
+        , stringToIntegerTest
         ]
