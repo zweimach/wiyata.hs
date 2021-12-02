@@ -20,6 +20,8 @@ source-repository head
 
 library
     exposed-modules:
+        AdventOfCode.Dive
+        AdventOfCode.SonarSweep
         Codeforces.Reorder
         Codewars.ConsecutiveStrings
         Codewars.OddOrEven
@@ -32,6 +34,7 @@ library
         CodinGame.Temperatures
         CodinGame.TheDescent
         DMOJ.NextInLine
+        DMOJ.TriangleTimes
         Exercism.CollatzConjecture
         Exercism.Pangram
         HackerRank.AlphabeticallySmallest
@@ -72,6 +75,8 @@ test-suite wiyata-test
     type:             exitcode-stdio-1.0
     main-is:          Main.hs
     other-modules:
+        AdventOfCode.DiveTest
+        AdventOfCode.SonarSweepTest
         Codeforces.ReorderTest
         Codewars.ConsecutiveStringsTest
         Codewars.OddOrEvenTest
@@ -84,6 +89,7 @@ test-suite wiyata-test
         CodinGame.TemperaturesTest
         CodinGame.TheDescentTest
         DMOJ.NextInLineTest
+        DMOJ.TriangleTimesTest
         Exercism.CollatzConjectureTest
         Exercism.PangramTest
         HackerRank.AlphabeticallySmallestTest

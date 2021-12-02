@@ -1,5 +1,7 @@
 module Main where
 
+import AdventOfCode.DiveTest (diveTest)
+import AdventOfCode.SonarSweepTest (sonarSweepTest)
 import Codeforces.ReorderTest (reorderTest)
 import Codewars.ConsecutiveStringsTest (consecutiveStringsTest)
 import Codewars.OddOrEvenTest (oddOrEvenTest)
@@ -12,6 +14,7 @@ import CodinGame.OnboardingTest (onboardingTest)
 import CodinGame.TemperaturesTest (temperaturesTest)
 import CodinGame.TheDescentTest (theDescentTest)
 import DMOJ.NextInLineTest (nextInLineTest)
+import DMOJ.TriangleTimesTest (triangleTimesTest)
 import Exercism.CollatzConjectureTest (collatzConjectureTest)
 import Exercism.PangramTest (pangramTest)
 import HackerRank.AlphabeticallySmallestTest (smallestStringTest)
@@ -75,4 +78,7 @@ tests =
         , theJungleBookTest
         , evaluateReversePolishNotationTest
         , stringToIntegerTest
+        , triangleTimesTest
+        , sonarSweepTest
+        , diveTest
         ]
