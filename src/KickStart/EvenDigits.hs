@@ -1,26 +1,27 @@
 module KickStart.EvenDigits where
 
 import Data.Char (digitToInt)
+import Data.List (foldl')
 
 evenDigits :: [Integer] -> [Integer]
-evenDigits [] = []
-evenDigits (x : xs)
-    | isDigitEven x = 0 : evenDigits xs
-    | otherwise = min (toDiff True) (toDiff False) : evenDigits xs
+evenDigits = map go
   where
+    go n
+        | isDigitEven n = 0
+        | otherwise = min (toDiff True n) (toDiff False n)
     isDigitEven n = all (even . digitToInt) $ show n
-    toDiff = abs . (x -) . read . snd . toEven
-    edgeOne fn = head (show x) == '1' && fn
-    edgeTwo fn = head (show x) == '9' && not fn
-    toEven fn =
-        foldl reduce ((False, edgeOne fn, edgeTwo fn, fn), "") $
-            digitToInt <$> show x
-    reduce ((found, edgeOne, edgeTwo, fn), s) x
-        | edgeTwo = makeTuple $ s ++ "8"
-        | edgeOne = makeTuple $ s ++ (if null s then "0" else "8")
-        | found = makeTuple $ s ++ (if fn then "8" else "0")
-        | odd x = makeOddTuple $ s ++ show (if fn then x - 1 else x + 1)
-        | otherwise = makeTuple $ s ++ show x
+    toDiff isDecr n = abs . (n -) . read . snd $ toEven isDecr n
+    edgeCaseOne isDecr n = head (show n) == '1' && isDecr
+    edgeCaseTwo isDecr n = head (show n) == '9' && not isDecr
+    toEven isDecr n =
+        foldl' reduce ((False, edgeCaseOne isDecr n, edgeCaseTwo isDecr n, isDecr), "") $
+            digitToInt <$> show n
+    reduce ((isFound, isEdgeCaseOne, isEdgeCaseTwo, isDecr), s) n
+        | isEdgeCaseTwo = makeTuple $ s ++ "8"
+        | isEdgeCaseOne = makeTuple $ s ++ (if null s then "0" else "8")
+        | isFound = makeTuple $ s ++ (if isDecr then "8" else "0")
+        | odd n = makeOddTuple $ s ++ show (if isDecr then n - 1 else n + 1)
+        | otherwise = makeTuple $ s ++ show n
       where
-        makeTuple n = ((found, edgeOne, edgeTwo, fn), n)
-        makeOddTuple n = ((True, edgeOne, edgeTwo, fn), n)
+        makeTuple s = ((isFound, isEdgeCaseOne, isEdgeCaseTwo, isDecr), s)
+        makeOddTuple s = ((True, isEdgeCaseOne, isEdgeCaseTwo, isDecr), s)
