@@ -21,6 +21,8 @@ source-repository head
 library
     exposed-modules:
         AdventOfCode.Dive
+        AdventOfCode.ReportRepair
+        AdventOfCode.RocketEquation
         AdventOfCode.SonarSweep
         Codeforces.Reorder
         Codewars.ConsecutiveStrings
@@ -76,6 +78,8 @@ test-suite wiyata-test
     main-is:          Main.hs
     other-modules:
         AdventOfCode.DiveTest
+        AdventOfCode.ReportRepairTest
+        AdventOfCode.RocketEquationTest
         AdventOfCode.SonarSweepTest
         Codeforces.ReorderTest
         Codewars.ConsecutiveStringsTest

@@ -1,6 +1,8 @@
 module Main where
 
 import AdventOfCode.DiveTest (diveTest)
+import AdventOfCode.ReportRepairTest (reportRepairTest)
+import AdventOfCode.RocketEquationTest (rocketEquationTest)
 import AdventOfCode.SonarSweepTest (sonarSweepTest)
 import Codeforces.ReorderTest (reorderTest)
 import Codewars.ConsecutiveStringsTest (consecutiveStringsTest)
@@ -81,4 +83,6 @@ tests =
         , triangleTimesTest
         , sonarSweepTest
         , diveTest
+        , reportRepairTest
+        , rocketEquationTest
         ]
