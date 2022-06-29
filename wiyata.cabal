@@ -18,105 +18,87 @@ source-repository head
     type:     git
     location: https://github.com/zweimach/wiyata.hs
 
-library
-    exposed-modules:
-        AdventOfCode.Dive
-        AdventOfCode.ReportRepair
-        AdventOfCode.RocketEquation
-        AdventOfCode.SonarSweep
-        Codeforces.Reorder
-        Codewars.ConsecutiveStrings
-        Codewars.OddOrEven
-        Codewars.ReverseRecursively
-        Codewars.StringRepeat
-        Codility.BinaryGap
-        Codility.OddOccurrencesInArray
-        CodinGame.HorseRacingDuals
-        CodinGame.Onboarding
-        CodinGame.Temperatures
-        CodinGame.TheDescent
-        DMOJ.NextInLine
-        DMOJ.TriangleTimes
-        Exercism.CollatzConjecture
-        Exercism.Pangram
-        HackerRank.AlphabeticallySmallest
-        HackerRank.BalancedBrackets
-        HackerRank.CountingValleys
-        HackerRank.Fibonacci
-        HackerRank.FirstRepeatedWord
-        HackerRank.PlusMinus
-        HackerRank.RepeatedString
-        HackerRank.SalesByMatch
-        HackerRank.SlowestKeyPress
-        HackerRank.TheJungleBook
-        KickStart.EvenDigits
-        LeetCode.EvaluateReversePolishNotation
-        LeetCode.LongestSubstring
-        LeetCode.RichestCustomerWealth
-        LeetCode.StringToInteger
-        LeetCode.ValidParentheses
-        OpenKattis.Everywhere
-        OpenKattis.FreeFood
-        OpenKattis.ToLower
-
-    other-modules:    Paths_wiyata
-    hs-source-dirs:   src
-    ghc-options:
-        -Wall -Wcompat -Wincomplete-record-updates
-        -Wincomplete-uni-patterns -Wredundant-constraints
-        -Wno-type-defaults -Wno-name-shadowing
-
-    build-depends:
-        , base        >=4.13 && <5
-        , containers
-        , text
-
-    default-language: Haskell2010
-
 test-suite wiyata-test
     type:             exitcode-stdio-1.0
     main-is:          Main.hs
     other-modules:
+        AdventOfCode.Dive
         AdventOfCode.DiveTest
+        AdventOfCode.ReportRepair
         AdventOfCode.ReportRepairTest
+        AdventOfCode.RocketEquation
         AdventOfCode.RocketEquationTest
+        AdventOfCode.SonarSweep
         AdventOfCode.SonarSweepTest
+        Codeforces.Reorder
         Codeforces.ReorderTest
+        Codewars.ConsecutiveStrings
         Codewars.ConsecutiveStringsTest
+        Codewars.OddOrEven
         Codewars.OddOrEvenTest
+        Codewars.ReverseRecursively
         Codewars.ReverseRecursivelyTest
+        Codewars.StringRepeat
         Codewars.StringRepeatTest
+        Codility.BinaryGap
         Codility.BinaryGapTest
+        Codility.OddOccurrencesInArray
         Codility.OddOccurrencesInArrayTest
+        CodinGame.HorseRacingDuals
         CodinGame.HorseRacingDualsTest
+        CodinGame.Onboarding
         CodinGame.OnboardingTest
+        CodinGame.Temperatures
         CodinGame.TemperaturesTest
+        CodinGame.TheDescent
         CodinGame.TheDescentTest
+        DMOJ.NextInLine
         DMOJ.NextInLineTest
+        DMOJ.TriangleTimes
         DMOJ.TriangleTimesTest
+        Exercism.CollatzConjecture
         Exercism.CollatzConjectureTest
+        Exercism.Pangram
         Exercism.PangramTest
+        HackerRank.AlphabeticallySmallest
         HackerRank.AlphabeticallySmallestTest
+        HackerRank.BalancedBrackets
         HackerRank.BalancedBracketsTest
+        HackerRank.CountingValleys
         HackerRank.CountingValleysTest
+        HackerRank.Fibonacci
         HackerRank.FibonacciTest
+        HackerRank.FirstRepeatedWord
         HackerRank.FirstRepeatedWordTest
+        HackerRank.PlusMinus
         HackerRank.PlusMinusTest
+        HackerRank.RepeatedString
         HackerRank.RepeatedStringTest
+        HackerRank.SalesByMatch
         HackerRank.SalesByMatchTest
+        HackerRank.SlowestKeyPress
         HackerRank.SlowestKeyPressTest
+        HackerRank.TheJungleBook
         HackerRank.TheJungleBookTest
+        KickStart.EvenDigits
         KickStart.EvenDigitsTest
+        LeetCode.EvaluateReversePolishNotation
         LeetCode.EvaluateReversePolishNotationTest
+        LeetCode.LongestSubstring
         LeetCode.LongestSubstringTest
+        LeetCode.RichestCustomerWealth
         LeetCode.RichestCustomerWealthTest
+        LeetCode.StringToInteger
         LeetCode.StringToIntegerTest
+        LeetCode.ValidParentheses
         LeetCode.ValidParenthesesTest
+        OpenKattis.Everywhere
         OpenKattis.EverywhereTest
+        OpenKattis.FreeFood
         OpenKattis.FreeFoodTest
+        OpenKattis.ToLower
         OpenKattis.ToLowerTest
 
-    hs-source-dirs:   tests
     ghc-options:
         -Wall -Wcompat -Wincomplete-record-updates
         -Wincomplete-uni-patterns -Wredundant-constraints -threaded
@@ -128,6 +110,5 @@ test-suite wiyata-test
         , tasty
         , tasty-hunit
         , text
-        , wiyata
 
     default-language: Haskell2010
