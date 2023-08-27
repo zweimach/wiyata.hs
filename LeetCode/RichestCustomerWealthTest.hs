@@ -1,4 +1,4 @@
-module LeetCode.RichestCustomerWealthTest where
+module LeetCode.RichestCustomerWealthTest (maximumWealthTest) where
 
 import LeetCode.RichestCustomerWealth (maximumWealth)
 import Test.Tasty (TestTree, testGroup)

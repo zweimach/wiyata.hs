@@ -1,4 +1,4 @@
-module Exercism.Pangram where
+module Exercism.Pangram (isPangram) where
 
 import Data.Char (toLower)
 import qualified Data.Map as Map

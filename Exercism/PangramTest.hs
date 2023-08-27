@@ -1,4 +1,4 @@
-module Exercism.PangramTest where
+module Exercism.PangramTest (pangramTest) where
 
 import Exercism.Pangram (isPangram)
 import Test.Tasty (TestTree, testGroup)

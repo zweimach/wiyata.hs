@@ -1,4 +1,4 @@
-module Codewars.ReverseRecursively where
+module Codewars.ReverseRecursively (revR) where
 
 revR :: [Int] -> [Int]
 revR = go []

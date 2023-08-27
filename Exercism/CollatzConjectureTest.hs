@@ -1,4 +1,4 @@
-module Exercism.CollatzConjectureTest where
+module Exercism.CollatzConjectureTest (collatzConjectureTest) where
 
 import Exercism.CollatzConjecture (collatz)
 import Test.Tasty (TestTree, testGroup)

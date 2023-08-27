@@ -1,4 +1,4 @@
-module Codewars.StringRepeatTest where
+module Codewars.StringRepeatTest (stringRepeatTest) where
 
 import Codewars.StringRepeat (repeatStr)
 import Test.Tasty (TestTree, testGroup)

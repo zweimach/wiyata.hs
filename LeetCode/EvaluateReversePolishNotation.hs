@@ -1,4 +1,4 @@
-module LeetCode.EvaluateReversePolishNotation where
+module LeetCode.EvaluateReversePolishNotation (evalRPN) where
 
 import Text.Read (readMaybe)
 

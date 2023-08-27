@@ -1,4 +1,4 @@
-module Codewars.ConsecutiveStringsTest where
+module Codewars.ConsecutiveStringsTest (consecutiveStringsTest) where
 
 import Codewars.ConsecutiveStrings (longestConsec)
 import Test.Tasty (TestTree, testGroup)

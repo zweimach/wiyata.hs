@@ -1,4 +1,4 @@
-module CodinGame.Temperatures where
+module CodinGame.Temperatures (temperatures) where
 
 import Data.List (elemIndex)
 import Data.Maybe (fromJust)

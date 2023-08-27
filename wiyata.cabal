@@ -1,4 +1,4 @@
-cabal-version:      2.4
+cabal-version:      3.0
 name:               wiyata
 version:            0.0.0
 description:        A collection of solutions written in Haskell
@@ -103,6 +103,28 @@ test-suite wiyata-test
         -Wall -Wcompat -Wincomplete-record-updates
         -Wincomplete-uni-patterns -Wredundant-constraints -threaded
         -Wno-type-defaults -Wno-name-shadowing -rtsopts -with-rtsopts=-N
+        -Wnoncanonical-monad-instances -Widentities
+
+    if impl(ghc >=8.2)
+        ghc-options: -fhide-source-paths
+
+    if impl(ghc >=8.4)
+        ghc-options: -Wmissing-export-lists -Wpartial-fields
+
+    if impl(ghc >=8.8)
+        ghc-options: -Wmissing-deriving-strategies -fwrite-ide-info -hiedir=.hie
+
+    if impl(ghc >=8.10)
+        ghc-options: -Wunused-packages
+
+    if impl(ghc >=9.0)
+        ghc-options: -Winvalid-haddock
+
+    if impl(ghc >=9.2)
+        ghc-options: -Wredundant-bang-patterns -Woperator-whitespace
+
+    if impl(ghc >=9.4)
+        ghc-options: -Wredundant-strictness-flags
 
     build-depends:
         , base         >=4.13 && <5

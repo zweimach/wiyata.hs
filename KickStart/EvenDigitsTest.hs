@@ -1,4 +1,4 @@
-module KickStart.EvenDigitsTest where
+module KickStart.EvenDigitsTest (evenDigitsTest) where
 
 import KickStart.EvenDigits (evenDigits)
 import Test.Tasty (TestTree, testGroup)

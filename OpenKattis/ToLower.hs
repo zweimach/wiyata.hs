@@ -1,8 +1,8 @@
-module OpenKattis.ToLower where
+module OpenKattis.ToLower (toLower) where
 
-import Data.Char (isLower)
+import qualified Data.Char as C
 
-toLower' :: [[String]] -> Int
-toLower' = length . filter id . map (all canBeLower)
+toLower :: [[String]] -> Int
+toLower = length . filter id . map (all canBeLower)
   where
-    canBeLower s = all isLower s || all isLower (tail s)
+    canBeLower s = all C.isLower s || all C.isLower (tail s)

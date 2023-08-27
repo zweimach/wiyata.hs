@@ -1,4 +1,4 @@
-module LeetCode.LongestSubstring where
+module LeetCode.LongestSubstring (lengthOfLongestSubstring) where
 
 import Data.Maybe (fromJust, isNothing)
 import Data.Sequence ((|>))

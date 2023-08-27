@@ -1,4 +1,4 @@
-module Codility.BinaryGapTest where
+module Codility.BinaryGapTest (binaryGapTest) where
 
 import Codility.BinaryGap (binaryGap)
 import Test.Tasty (TestTree, testGroup)

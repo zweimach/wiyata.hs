@@ -1,4 +1,4 @@
-module OpenKattis.FreeFood where
+module OpenKattis.FreeFood (freeFood) where
 
 import Data.Containers.ListUtils (nubOrd)
 

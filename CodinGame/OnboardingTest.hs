@@ -1,4 +1,4 @@
-module CodinGame.OnboardingTest where
+module CodinGame.OnboardingTest (onboardingTest) where
 
 import CodinGame.Onboarding (onboarding)
 import Test.Tasty (TestTree, testGroup)

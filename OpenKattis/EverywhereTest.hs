@@ -1,4 +1,4 @@
-module OpenKattis.EverywhereTest where
+module OpenKattis.EverywhereTest (everywhereTest) where
 
 import OpenKattis.Everywhere (everywhere)
 import Test.Tasty (TestTree, testGroup)

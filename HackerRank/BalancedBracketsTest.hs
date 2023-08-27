@@ -1,4 +1,4 @@
-module HackerRank.BalancedBracketsTest where
+module HackerRank.BalancedBracketsTest (balancedBracketsTest) where
 
 import HackerRank.BalancedBrackets (isBalanced)
 import Test.Tasty (TestTree, testGroup)

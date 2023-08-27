@@ -1,4 +1,4 @@
-module OpenKattis.FreeFoodTest where
+module OpenKattis.FreeFoodTest (freeFoodTest) where
 
 import OpenKattis.FreeFood (freeFood)
 import Test.Tasty (TestTree, testGroup)

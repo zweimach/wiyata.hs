@@ -1,4 +1,4 @@
-module Codewars.ConsecutiveStrings where
+module Codewars.ConsecutiveStrings (longestConsec) where
 
 import Data.List (maximumBy)
 

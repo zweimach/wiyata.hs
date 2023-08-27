@@ -1,4 +1,4 @@
-module HackerRank.Fibonacci where
+module HackerRank.Fibonacci (fibonacci) where
 
 fibonacci :: Int -> Int
 fibonacci = go 0 1

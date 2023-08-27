@@ -1,4 +1,4 @@
-module OpenKattis.Everywhere where
+module OpenKattis.Everywhere (everywhere) where
 
 import Data.Containers.ListUtils (nubOrd)
 

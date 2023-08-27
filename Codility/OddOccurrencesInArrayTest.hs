@@ -1,4 +1,4 @@
-module Codility.OddOccurrencesInArrayTest where
+module Codility.OddOccurrencesInArrayTest (oddOccurrencesInArrayTest) where
 
 import Codility.OddOccurrencesInArray (oddOccurrencesInArray)
 import Test.Tasty (TestTree, testGroup)

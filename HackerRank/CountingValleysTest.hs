@@ -1,4 +1,4 @@
-module HackerRank.CountingValleysTest where
+module HackerRank.CountingValleysTest (countingValleysTest) where
 
 import HackerRank.CountingValleys (countingValleys)
 import Test.Tasty (TestTree, testGroup)

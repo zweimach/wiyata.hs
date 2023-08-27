@@ -1,4 +1,4 @@
-module HackerRank.SlowestKeyPress where
+module HackerRank.SlowestKeyPress (slowestKey) where
 
 import Data.Char (chr)
 import Data.List (maximumBy)

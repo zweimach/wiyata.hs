@@ -1,4 +1,4 @@
-module HackerRank.PlusMinus where
+module HackerRank.PlusMinus (plusMinus) where
 
 plusMinus :: (Fractional a, Ord a) => [a] -> (a, a, a)
 plusMinus arr = (positives, negatives, zeros)

@@ -1,4 +1,4 @@
-module HackerRank.SlowestKeyPressTest where
+module HackerRank.SlowestKeyPressTest (slowestKeyPressTest) where
 
 import HackerRank.SlowestKeyPress (slowestKey)
 import Test.Tasty (TestTree, testGroup)

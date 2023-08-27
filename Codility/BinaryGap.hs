@@ -1,4 +1,4 @@
-module Codility.BinaryGap where
+module Codility.BinaryGap (binaryGap) where
 
 import Data.Char (intToDigit)
 import Data.List (dropWhileEnd, genericLength)

@@ -1,9 +1,8 @@
-module CodinGame.HorseRacingDuals where
+module CodinGame.HorseRacingDuals (horseRacingDuals) where
 
 import Data.List (sort)
 
 horseRacingDuals :: [Int] -> Int
-horseRacingDuals = minimum . g . sort
+horseRacingDuals = minimum . map abs . f . sort
   where
-    f (fs, sn) = abs $ fs - sn
-    g xs = zipWith (curry f) xs $ tail xs
+    f xs = zipWith (-) xs (tail xs)

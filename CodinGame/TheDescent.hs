@@ -1,4 +1,4 @@
-module CodinGame.TheDescent where
+module CodinGame.TheDescent (theDescent) where
 
 import Data.List (elemIndex)
 import Data.Maybe (fromJust)

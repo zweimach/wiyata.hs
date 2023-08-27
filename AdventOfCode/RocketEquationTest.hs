@@ -1,4 +1,4 @@
-module AdventOfCode.RocketEquationTest where
+module AdventOfCode.RocketEquationTest (rocketEquationTest) where
 
 import AdventOfCode.RocketEquation (
     rocketEquation,

@@ -1,4 +1,4 @@
-module HackerRank.CountingValleys where
+module HackerRank.CountingValleys (countingValleys) where
 
 countingValleys :: Int -> String -> Int
 countingValleys _ = go 0 0

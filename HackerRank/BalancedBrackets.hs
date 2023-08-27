@@ -1,4 +1,4 @@
-module HackerRank.BalancedBrackets where
+module HackerRank.BalancedBrackets (isBalanced) where
 
 import qualified Data.Map as Map
 

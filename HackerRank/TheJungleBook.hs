@@ -1,4 +1,4 @@
-module HackerRank.TheJungleBook where
+module HackerRank.TheJungleBook (minimumGroups) where
 
 minimumGroups :: [Int] -> Int
 minimumGroups xs = maximum $ map (findDepth 1 xs) xs

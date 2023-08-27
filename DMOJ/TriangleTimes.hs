@@ -1,4 +1,4 @@
-module DMOJ.TriangleTimes where
+module DMOJ.TriangleTimes (triangleTimes) where
 
 triangleTimes :: Int -> Int -> Int -> String
 triangleTimes a b c

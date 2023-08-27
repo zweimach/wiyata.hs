@@ -1,4 +1,4 @@
-module CodinGame.TheDescentTest where
+module CodinGame.TheDescentTest (theDescentTest) where
 
 import CodinGame.TheDescent (theDescent)
 import Test.Tasty (TestTree, testGroup)

@@ -1,4 +1,4 @@
-module HackerRank.FibonacciTest where
+module HackerRank.FibonacciTest (fibonacciTest) where
 
 import HackerRank.Fibonacci (fibonacci)
 import Test.Tasty (TestTree, testGroup)

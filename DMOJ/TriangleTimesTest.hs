@@ -1,4 +1,4 @@
-module DMOJ.TriangleTimesTest where
+module DMOJ.TriangleTimesTest (triangleTimesTest) where
 
 import DMOJ.TriangleTimes (triangleTimes)
 import Test.Tasty (TestTree, testGroup)

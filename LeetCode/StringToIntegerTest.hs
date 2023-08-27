@@ -1,4 +1,4 @@
-module LeetCode.StringToIntegerTest where
+module LeetCode.StringToIntegerTest (stringToIntegerTest) where
 
 import LeetCode.StringToInteger (myAtoi)
 import Test.Tasty (TestTree, testGroup)

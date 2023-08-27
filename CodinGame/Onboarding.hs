@@ -1,4 +1,4 @@
-module CodinGame.Onboarding where
+module CodinGame.Onboarding (onboarding) where
 
 onboarding :: (String, Int) -> (String, Int) -> String
 onboarding (enemy1, dist1) (enemy2, dist2)

@@ -1,4 +1,4 @@
-module HackerRank.TheJungleBookTest where
+module HackerRank.TheJungleBookTest (theJungleBookTest) where
 
 import HackerRank.TheJungleBook (minimumGroups)
 import Test.Tasty (TestTree, testGroup)

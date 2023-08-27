@@ -1,4 +1,4 @@
-module LeetCode.EvaluateReversePolishNotationTest where
+module LeetCode.EvaluateReversePolishNotationTest (evaluateReversePolishNotationTest) where
 
 import LeetCode.EvaluateReversePolishNotation (evalRPN)
 import Test.Tasty (TestTree, testGroup)

@@ -1,4 +1,4 @@
-module AdventOfCode.ReportRepair where
+module AdventOfCode.ReportRepair (reportRepair, reportRepairPartTwo) where
 
 import Data.List (find)
 

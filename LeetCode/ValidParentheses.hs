@@ -1,9 +1,9 @@
-module LeetCode.ValidParentheses where
+module LeetCode.ValidParentheses (isValid) where
 
 import qualified Data.Map as Map
 
-validParentheses :: String -> Bool
-validParentheses = null . go []
+isValid :: String -> Bool
+isValid = null . go []
   where
     pairs = Map.fromList [('(', ')'), ('[', ']'), ('{', '}')]
     go acc [] = acc

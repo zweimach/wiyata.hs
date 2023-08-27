@@ -1,4 +1,4 @@
-module HackerRank.SalesByMatch where
+module HackerRank.SalesByMatch (sockMerchant) where
 
 import qualified Data.Set as Set
 

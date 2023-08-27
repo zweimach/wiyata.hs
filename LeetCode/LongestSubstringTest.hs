@@ -1,4 +1,4 @@
-module LeetCode.LongestSubstringTest where
+module LeetCode.LongestSubstringTest (longestSubstringTest) where
 
 import LeetCode.LongestSubstring (lengthOfLongestSubstring)
 import Test.Tasty (TestTree, testGroup)

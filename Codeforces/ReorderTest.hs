@@ -1,4 +1,4 @@
-module Codeforces.ReorderTest where
+module Codeforces.ReorderTest (reorderTest) where
 
 import Codeforces.Reorder (reorder)
 import Test.Tasty (TestTree, testGroup)

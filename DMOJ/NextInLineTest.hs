@@ -1,4 +1,4 @@
-module DMOJ.NextInLineTest where
+module DMOJ.NextInLineTest (nextInLineTest) where
 
 import DMOJ.NextInLine (nextInLine)
 import Test.Tasty (TestTree, testGroup)

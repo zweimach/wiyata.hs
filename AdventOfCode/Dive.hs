@@ -1,4 +1,4 @@
-module AdventOfCode.Dive where
+module AdventOfCode.Dive (dive, divePartTwo) where
 
 import Data.Foldable (foldl')
 

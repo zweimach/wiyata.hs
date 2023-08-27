@@ -1,6 +1,6 @@
-module LeetCode.ValidParenthesesTest where
+module LeetCode.ValidParenthesesTest (validParenthesesTest) where
 
-import LeetCode.ValidParentheses (validParentheses)
+import LeetCode.ValidParentheses (isValid)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 
@@ -8,10 +8,10 @@ validParenthesesTest :: TestTree
 validParenthesesTest =
     testGroup
         "validParentheses"
-        [ testCase "(){}[]" $ validParentheses "(){}[]" @?= True
-        , testCase "[({(()()())})]" $ validParentheses "[({(()()())})]" @?= True
-        , testCase "{([({[]}[])()])}" $ validParentheses "{([({[]}[])()])}" @?= True
-        , testCase "([{({[]})}]))" $ validParentheses "([{({[]})}]))" @?= False
-        , testCase "[](){}(){}[]]]]" $ validParentheses "[](){}(){}[]]]]" @?= False
-        , testCase "{{[[(((" $ validParentheses "{{[[(((" @?= False
+        [ testCase "(){}[]" $ isValid "(){}[]" @?= True
+        , testCase "[({(()()())})]" $ isValid "[({(()()())})]" @?= True
+        , testCase "{([({[]}[])()])}" $ isValid "{([({[]}[])()])}" @?= True
+        , testCase "([{({[]})}]))" $ isValid "([{({[]})}]))" @?= False
+        , testCase "[](){}(){}[]]]]" $ isValid "[](){}(){}[]]]]" @?= False
+        , testCase "{{[[(((" $ isValid "{{[[(((" @?= False
         ]

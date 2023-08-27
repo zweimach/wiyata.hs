@@ -1,4 +1,4 @@
-module CodinGame.HorseRacingDualsTest where
+module CodinGame.HorseRacingDualsTest (horseRacingDualsTest) where
 
 import CodinGame.HorseRacingDuals (horseRacingDuals)
 import Test.Tasty (TestTree, testGroup)

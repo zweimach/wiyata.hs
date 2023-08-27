@@ -1,16 +1,14 @@
-module AdventOfCode.SonarSweep where
+module AdventOfCode.SonarSweep (sonarSweep, sonarSweepPartTwo) where
 
 import Data.List (tails)
 
 sonarSweep :: [Int] -> Int
-sonarSweep = length . filter id . map f . g
+sonarSweep = length . filter id . f
   where
-    f (f, s) = f < s
-    g xs = zip xs (tail xs)
+    f xs = zipWith (<) xs (tail xs)
 
 sonarSweepPartTwo :: [Int] -> Int
-sonarSweepPartTwo = length . filter id . map f . g . map sum . h
+sonarSweepPartTwo = length . filter id . f . map sum . g
   where
-    f (f, s) = f < s
-    g xs = zip xs (tail xs)
-    h xs = zipWith const (take 3 <$> tails xs) (drop 2 xs)
+    f xs = zipWith (<) xs (tail xs)
+    g xs = zipWith const (take 3 <$> tails xs) (drop 2 xs)

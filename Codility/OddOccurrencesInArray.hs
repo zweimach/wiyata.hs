@@ -1,8 +1,8 @@
-module Codility.OddOccurrencesInArray where
+module Codility.OddOccurrencesInArray (oddOccurrencesInArray) where
 
 import qualified Data.Map as Map
 
-oddOccurrencesInArray :: Ord a => [a] -> a
+oddOccurrencesInArray :: (Ord a) => [a] -> a
 oddOccurrencesInArray = fst . head . filter ((== 1) . snd) . go Map.empty
   where
     go acc [] = Map.toList acc

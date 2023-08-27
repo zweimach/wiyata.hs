@@ -1,4 +1,4 @@
-module LeetCode.StringToInteger where
+module LeetCode.StringToInteger (myAtoi) where
 
 import Data.Int (Int32)
 import Text.Read (readMaybe)

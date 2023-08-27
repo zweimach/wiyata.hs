@@ -1,4 +1,4 @@
-module HackerRank.RepeatedStringTest where
+module HackerRank.RepeatedStringTest (repeatedStringTest) where
 
 import HackerRank.RepeatedString (repeatedString)
 import Test.Tasty (TestTree, testGroup)

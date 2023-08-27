@@ -1,4 +1,4 @@
-module CodinGame.TemperaturesTest where
+module CodinGame.TemperaturesTest (temperaturesTest) where
 
 import CodinGame.Temperatures (temperatures)
 import Test.Tasty (TestTree, testGroup)

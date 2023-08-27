@@ -1,4 +1,4 @@
-module Codewars.ReverseRecursivelyTest where
+module Codewars.ReverseRecursivelyTest (reverseRecursivelyTest) where
 
 import Codewars.ReverseRecursively (revR)
 import Test.Tasty (TestTree, testGroup)

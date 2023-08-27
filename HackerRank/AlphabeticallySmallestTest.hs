@@ -1,4 +1,4 @@
-module HackerRank.AlphabeticallySmallestTest where
+module HackerRank.AlphabeticallySmallestTest (smallestStringTest) where
 
 import HackerRank.AlphabeticallySmallest (smallestString)
 import Test.Tasty (TestTree, testGroup)

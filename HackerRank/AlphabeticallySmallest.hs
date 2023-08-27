@@ -1,4 +1,4 @@
-module HackerRank.AlphabeticallySmallest where
+module HackerRank.AlphabeticallySmallest (smallestString) where
 
 import Data.List (sort)
 

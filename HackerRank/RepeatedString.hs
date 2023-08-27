@@ -1,4 +1,4 @@
-module HackerRank.RepeatedString where
+module HackerRank.RepeatedString (repeatedString) where
 
 import Data.List (genericLength, genericTake)
 

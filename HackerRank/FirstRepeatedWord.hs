@@ -1,4 +1,4 @@
-module HackerRank.FirstRepeatedWord where
+module HackerRank.FirstRepeatedWord (firstRepeatedWord) where
 
 firstRepeatedWord :: String -> String
 firstRepeatedWord sentence = findFirst [] $ words . dropDelimiter $ sentence

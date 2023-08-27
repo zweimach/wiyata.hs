@@ -1,4 +1,4 @@
-module Codewars.OddOrEvenTest where
+module Codewars.OddOrEvenTest (oddOrEvenTest) where
 
 import Codewars.OddOrEven (oddOrEven)
 import Test.Tasty (TestTree, testGroup)

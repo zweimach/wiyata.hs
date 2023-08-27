@@ -1,4 +1,4 @@
-module HackerRank.SalesByMatchTest where
+module HackerRank.SalesByMatchTest (salesByMatchTest) where
 
 import HackerRank.SalesByMatch (sockMerchant)
 import Test.Tasty (TestTree, testGroup)

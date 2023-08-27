@@ -1,4 +1,4 @@
-module HackerRank.PlusMinusTest where
+module HackerRank.PlusMinusTest (plusMinusTest) where
 
 import HackerRank.PlusMinus (plusMinus)
 import Test.Tasty (TestTree, testGroup)

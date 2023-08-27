@@ -1,4 +1,4 @@
-module AdventOfCode.RocketEquation where
+module AdventOfCode.RocketEquation (rocketEquation, rocketEquationPartTwo) where
 
 rocketEquation :: [Int] -> Int
 rocketEquation = sum . fmap (subtract 2 . (`div` 3))

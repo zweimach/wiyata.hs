@@ -1,4 +1,4 @@
-module KickStart.EvenDigits where
+module KickStart.EvenDigits (evenDigits) where
 
 import Data.Char (digitToInt)
 import Data.List (foldl')
